@@ -58,11 +58,12 @@ fun getGitDescribe(): String {
 fun getVersionCode(): Int {
     val commitCount = getGitCommitCount()
     val major = 1
-    return major * 10000 + commitCount + 200
+    return major * 10000 + commitCount + 199
 }
 
 fun getVersionName(): String {
-    return getGitDescribe()
+    //return getGitDescribe()
+    return "v1.0.2"
 }
 
 subprojects {
